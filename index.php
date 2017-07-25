@@ -1,5 +1,5 @@
 <?php
-  $json = json_decode(file_get_contents('http://api.giphy.com/v1/gifs/search?q=success&api_key=dc6zaTOxFJmzC&limit=10'), true);
+  $json = json_decode(file_get_contents('http://api.giphy.com/v1/gifs/search?q=about+time&api_key=dc6zaTOxFJmzC&limit=10'), true);
 
   $url = $json['data'][array_rand($json['data'])]['images']['fixed_height']['url'];
 ?><html>
@@ -116,7 +116,7 @@ img {
 </head>
 <body>
   <article>
-    Ja natuurlijk wel!
+    Best lang geleden!
     <br />
     <img src="<?= $url ?>" />
   </article>
