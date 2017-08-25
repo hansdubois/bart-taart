@@ -6,6 +6,7 @@
 <head>
   <title>Nee nog niet...</title>
   <meta name="viewport" content="initial-width=device-width,initial-scale=1,user-scalable=no" />
+  <meta charset="utf-8" />
 
   <style type="text/css">
   /* http://meyerweb.com/eric/tools/css/reset/
