@@ -1,10 +1,10 @@
 <?php
-  $json = json_decode(file_get_contents('http://api.giphy.com/v1/gifs/search?q=new+job&api_key=dc6zaTOxFJmzC&limit=10'), true);
+  $json = json_decode(file_get_contents('http://api.giphy.com/v1/gifs/search?q=scrum+master&api_key=dc6zaTOxFJmzC&limit=10'), true);
 
   $url = $json['data'][array_rand($json['data'])]['images']['fixed_height']['url'];
 ?><html>
 <head>
-  <title>Nee nog niet...</title>
+  <title>Vaarwel Bart, je was er!</title>
   <meta name="viewport" content="initial-width=device-width,initial-scale=1,user-scalable=no" />
   <meta charset="utf-8" />
 
@@ -117,7 +117,7 @@ img {
 </head>
 <body>
   <article>
-    Nieuwe baan, toch taart 🎂
+    Vaarwel Bart, je was er! 😢
     <br />
     <img src="<?= $url ?>" />
   </article>
